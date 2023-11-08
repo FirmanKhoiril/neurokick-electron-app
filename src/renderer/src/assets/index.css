@@ -7,3 +7,11 @@
 body {
   @apply font-inter bg-[#F1F1F1];
 }
+
+.btn_bg {
+  @apply bg-primary;
+}
+
+.btn_outline {
+  @apply border border-[#2e6fff];
+}

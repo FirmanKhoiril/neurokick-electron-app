@@ -1,8 +1,12 @@
 import { FiSearch } from 'react-icons/fi'
 import { BsPlusCircle, BsShare } from 'react-icons/bs'
-import Notification from '../assets/Notification.svg'
+import Notification from '../../assets/Notification.svg'
+import { useGlobalState } from '@renderer/context/ContextApi'
 
 const Navbar = () => {
+  const { setToogleNewCall, setIsTranscript, searchConversation, setSearchConversation } =
+    useGlobalState()
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
   }
@@ -13,6 +17,8 @@ const Navbar = () => {
         <input
           type="text"
           required
+          value={searchConversation}
+          onChange={(e) => setSearchConversation(e.target.value)}
           className="bg-[#E5EDFF] w-[200px]  sm:w-[280px] md:w-[350px] py-1.5 pl-8 pr-2 border-[#AEC9FF] focus:border-[#79a5fe] outline-none border rounded-[6px] tracking-tight placeholder:text-[#88B0FF] placeholder:text-sm"
           placeholder="Search..."
         />
@@ -29,6 +35,10 @@ const Navbar = () => {
         <button
           type="button"
           name="MakeNewCall"
+          onClick={() => {
+            setToogleNewCall(true)
+            setIsTranscript(true)
+          }}
           aria-label="MakeNewCall"
           className="flex text-[12px] text-white py-2 px-2 sm:px-4 rounded-[6px] items-center gap-2 bg-primary"
         >

@@ -1,24 +1,40 @@
-import { useState, useContext, createContext, useMemo } from 'react'
-
-interface AppContextValue {
-  isTranscript: boolean
-  setIsTranscript: (value: boolean) => void
-}
-
-const StateContext = createContext<AppContextValue>({
-  isTranscript: false,
-  setIsTranscript: () => {}
-})
+import { AppContextValue, StateContext } from '@renderer/types/Context'
+import { useState, useContext, useMemo } from 'react'
 
 export const ContextApi = ({ children }: { children: React.ReactNode }) => {
   const [isTranscript, setIsTranscript] = useState(true)
+  const [nameCall, setNameCall] = useState('')
+  const [searchConversation, setSearchConversation] = useState('')
+  const [toogleNewCall, setToogleNewCall] = useState(false)
+  const [toogleSpeakInsites, setToogleSpeakInsites] = useState(false)
 
   const contextValue = useMemo(
-    () => ({ isTranscript, setIsTranscript }),
-    [isTranscript, setIsTranscript]
+    () => ({
+      searchConversation,
+      setSearchConversation,
+      isTranscript,
+      nameCall,
+      setNameCall,
+      setIsTranscript,
+      toogleSpeakInsites,
+      setToogleSpeakInsites,
+      toogleNewCall,
+      setToogleNewCall
+    }),
+    [
+      isTranscript,
+      searchConversation,
+      setSearchConversation,
+      nameCall,
+      setNameCall,
+      setIsTranscript,
+      toogleSpeakInsites,
+      setToogleSpeakInsites,
+      toogleNewCall,
+      setToogleNewCall
+    ]
   )
-
   return <StateContext.Provider value={contextValue}>{children}</StateContext.Provider>
 }
 
-export const useGlobalState = (): any => useContext(StateContext)
+export const useGlobalState = (): AppContextValue => useContext(StateContext)
