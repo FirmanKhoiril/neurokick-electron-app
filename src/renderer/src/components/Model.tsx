@@ -8,7 +8,7 @@ const Model = () => {
   const navigation = useNavigate()
   return (
     <div className="absolute top-0 z-20 flex items-center justify-center h-screen w-full">
-      <div className="w-[450px] flex justify-between py-6 px-4 flex-col gap-2 h-[200px] bg-white drop-shadow-md rounded-[6px]">
+      <div className="w-[450px] flex justify-between py-6 px-4 flex-col gap-2 h-[215px] bg-white drop-shadow-md rounded-[6px]">
         <div className="flex flex-col gap-2">
           <div>
             <h1 className="text-[16px] font-[500]">Leadership Copilot 2.0</h1>
@@ -20,7 +20,7 @@ const Model = () => {
             type="text"
             value={nameCall}
             onChange={(e) => setNameCall(e.target.value)}
-            className="outline-none placeholder:text-[12px] border-[#AEC9FF] border py-2.5 px-2 rounded-[6px]"
+            className="outline-none caret-[#2e6fff] placeholder:text-[12px] border-[#AEC9FF] border py-2.5 px-2 rounded-[6px]"
             placeholder="Enter name here..."
           />
         </div>

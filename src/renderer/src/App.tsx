@@ -5,8 +5,13 @@ import { useGlobalState } from './context/ContextApi'
 import { Toaster } from 'sonner'
 
 function App(): JSX.Element {
+  const isAuth = true
+
   const { toogleSpeakInsites, toogleNewCall } = useGlobalState()
   const location = useLocation()
+
+  if (!isAuth) return <Login />
+
   return (
     <main className="flex ">
       <Toaster richColors position="top-center" />

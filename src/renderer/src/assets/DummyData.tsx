@@ -1,4 +1,4 @@
-import { userTwo } from '.'
+import { SpeakingAnalysis, userTwo } from '.'
 export const dataAnalysis = [
   {
     name: 'John',
@@ -47,11 +47,18 @@ export const dataPassCallInsight = [
     overall: 79
   },
   {
-    name: 'Diablo Noir',
+    name: 'Geld',
     image: userTwo,
     date: '5 Jun, 2023',
     duration: '20 Min',
     overall: 48
+  },
+  {
+    name: 'Diablo Noir',
+    image: userTwo,
+    date: '5 Jun, 2023',
+    duration: '28 Min',
+    overall: 50
   },
   {
     name: 'Rimuru',
@@ -100,7 +107,7 @@ export const dataPassCallInsight = [
     image: userTwo,
     date: '5 Jun, 2023',
     duration: '20 Min',
-    overall: 48
+    overall: 49
   },
   {
     name: 'Rimuru',
@@ -108,5 +115,16 @@ export const dataPassCallInsight = [
     date: '5 Jun, 2023',
     duration: '12 Min',
     overall: 0
+  }
+]
+
+export const dataSpeakingAnalysis = [
+  {
+    id: '242fsfhg',
+    image: SpeakingAnalysis
+  },
+  {
+    id: '8gjsjfnsk',
+    image: SpeakingAnalysis
   }
 ]

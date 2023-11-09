@@ -11,7 +11,6 @@ import ToogleTranscript from './ToogleTranscript'
 import Transcript from './Transcript'
 import Model from './Model'
 import SignIn from './auth/SignIn'
-
 import SignUp from './auth/SignUp'
 import PastCallInsightHead from './PCIHead'
 

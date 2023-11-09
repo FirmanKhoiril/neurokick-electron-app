@@ -7,12 +7,15 @@ export const ContextApi = ({ children }: { children: React.ReactNode }) => {
   const [searchConversation, setSearchConversation] = useState('')
   const [toogleNewCall, setToogleNewCall] = useState(false)
   const [toogleSpeakInsites, setToogleSpeakInsites] = useState(false)
+  const [speakAnalysisId, setSpeakAnalysisId] = useState('')
 
   const contextValue = useMemo(
     () => ({
       searchConversation,
       setSearchConversation,
       isTranscript,
+      speakAnalysisId,
+      setSpeakAnalysisId,
       nameCall,
       setNameCall,
       setIsTranscript,
@@ -24,6 +27,8 @@ export const ContextApi = ({ children }: { children: React.ReactNode }) => {
     [
       isTranscript,
       searchConversation,
+      speakAnalysisId,
+      setSpeakAnalysisId,
       setSearchConversation,
       nameCall,
       setNameCall,

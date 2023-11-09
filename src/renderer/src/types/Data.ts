@@ -5,3 +5,8 @@ export type TDataPostCall = {
   date: string
   duration: string
 }
+
+export type TDataSpeakingAnalysis = {
+  id: string
+  image: any
+}
