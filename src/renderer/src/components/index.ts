@@ -6,6 +6,7 @@ import InputSpeaking from './InputSpeaking'
 import LeadershipCopilot from './LeadershipCopilot'
 import Navbar from './layout/Navbar'
 import Sidebar from './layout/Sidebar'
+import LeftRegister from './layout/LeftRegister'
 import SpeakingInsites from './SpeakingInsites'
 import ToogleTranscript from './ToogleTranscript'
 import Transcript from './Transcript'
@@ -22,6 +23,7 @@ export {
   SignIn,
   SignUp,
   Model,
+  LeftRegister,
   CallsInsight,
   Conversation,
   Navbar,

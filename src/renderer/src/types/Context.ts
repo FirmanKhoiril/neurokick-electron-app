@@ -10,6 +10,10 @@ export interface AppContextValue {
   nameCall: string
   searchConversation: string
   speakAnalysisId: string
+  setIsSignup: (value: boolean) => void
+  isSignup: boolean
+  showPassword: boolean
+  setShowPassword: (value: boolean) => void
   setSpeakAnalysisId: React.Dispatch<SetStateAction<string>>
   setNameCall: React.Dispatch<SetStateAction<string>>
   setSearchConversation: React.Dispatch<SetStateAction<string>>
@@ -18,6 +22,10 @@ export interface AppContextValue {
 export const StateContext = createContext<AppContextValue>({
   isTranscript: false,
   setIsTranscript: () => {},
+  setIsSignup: () => {},
+  isSignup: false,
+  showPassword: false,
+  setShowPassword: () => {},
   toogleSpeakInsites: true,
   setToogleSpeakInsites: () => {},
   toogleNewCall: false,

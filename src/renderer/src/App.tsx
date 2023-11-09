@@ -5,7 +5,7 @@ import { useGlobalState } from './context/ContextApi'
 import { Toaster } from 'sonner'
 
 function App(): JSX.Element {
-  const isAuth = true
+  const isAuth = false
 
   const { toogleSpeakInsites, toogleNewCall } = useGlobalState()
   const location = useLocation()
