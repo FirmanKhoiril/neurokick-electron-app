@@ -8,11 +8,15 @@ import BrainLeft from './BrainLeft.svg'
 import CheckMark from './CheckMark.svg'
 import CloseMark from './CloseMark.svg'
 import Home from './Home.svg'
+import MicrosoftLogo from './Microsoft.svg'
+import LogoGoogle from './LogoGoogle.svg'
 
 export {
   userTwo,
   BrainLeft,
   CheckMark,
+  LogoGoogle,
+  MicrosoftLogo,
   BrainLogo,
   Brain,
   SpeakingAnalysis,

@@ -14,9 +14,17 @@ import Model from './Model'
 import SignIn from './auth/SignIn'
 import SignUp from './auth/SignUp'
 import PastCallInsightHead from './PCIHead'
+import Apple from './button/Apple'
+import Microsoft from './button/Microsoft'
+import Facebook from './button/Facebook'
+import Google from './button/Google'
 
 export {
   InputSpeaking,
+  Apple,
+  Microsoft,
+  Facebook,
+  Google,
   PastCallInsightHead,
   SpeakInsite,
   PostCallInsight,

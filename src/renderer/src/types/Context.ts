@@ -13,7 +13,9 @@ export interface AppContextValue {
   setIsSignup: (value: boolean) => void
   isSignup: boolean
   showPassword: boolean
+  isAuth: boolean
   setShowPassword: (value: boolean) => void
+  setIsAuth: (value: boolean) => void
   setSpeakAnalysisId: React.Dispatch<SetStateAction<string>>
   setNameCall: React.Dispatch<SetStateAction<string>>
   setSearchConversation: React.Dispatch<SetStateAction<string>>
@@ -23,6 +25,8 @@ export const StateContext = createContext<AppContextValue>({
   isTranscript: false,
   setIsTranscript: () => {},
   setIsSignup: () => {},
+  isAuth: false,
+  setIsAuth: () => {},
   isSignup: false,
   showPassword: false,
   setShowPassword: () => {},

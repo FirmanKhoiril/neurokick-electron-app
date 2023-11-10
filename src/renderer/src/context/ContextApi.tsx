@@ -5,6 +5,7 @@ export const ContextApi = ({ children }: { children: React.ReactNode }) => {
   const [isTranscript, setIsTranscript] = useState(true)
   const [nameCall, setNameCall] = useState('')
   const [searchConversation, setSearchConversation] = useState('')
+  const [isAuth, setIsAuth] = useState(false)
   const [toogleNewCall, setToogleNewCall] = useState(false)
   const [toogleSpeakInsites, setToogleSpeakInsites] = useState(false)
   const [speakAnalysisId, setSpeakAnalysisId] = useState('')
@@ -17,6 +18,8 @@ export const ContextApi = ({ children }: { children: React.ReactNode }) => {
       setSearchConversation,
       isTranscript,
       speakAnalysisId,
+      isAuth,
+      setIsAuth,
       isSignup,
       setIsSignup,
       setSpeakAnalysisId,
@@ -32,6 +35,8 @@ export const ContextApi = ({ children }: { children: React.ReactNode }) => {
     }),
     [
       isTranscript,
+      isAuth,
+      setIsAuth,
       searchConversation,
       showPassword,
       setShowPassword,

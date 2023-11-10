@@ -54,7 +54,7 @@ const SignIn = () => {
       >
         Log in
       </button>
-      <div className="w-full justify-center flex py-4">
+      <div className="w-full justify-center flex pt-4">
         <p>Don't have an account?</p>
         <button
           type="button"

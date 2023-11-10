@@ -17,7 +17,7 @@ const SignUp = () => {
           className="outline-none border border-gray-300 rounded-[6px] py-2.5 px-2 placeholder:text-sm text-sm"
         />
       </div>
-      <div className="flex flex-col pt-2 gap-2">
+      <div className="flex flex-col pt-1.5 gap-2">
         <label htmlFor="email" className="font-semibold tracking-tight">
           Email*
         </label>
@@ -29,7 +29,7 @@ const SignUp = () => {
           className="outline-none border border-gray-300 rounded-[6px] py-2.5 px-2 placeholder:text-sm text-sm"
         />
       </div>
-      <div className="flex flex-col relative pt-2 gap-2">
+      <div className="flex flex-col relative pt-1.5 gap-2">
         <label htmlFor="password" className="font-semibold tracking-tight">
           Password*
         </label>
@@ -48,7 +48,7 @@ const SignUp = () => {
           {showPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
         </button>
       </div>
-      <div className="pt-1 pb-6">
+      <div className="pt-1 pb-4">
         <p className="text-[11px] text-black/80">Must be 8 characters.</p>
       </div>
       <button
@@ -57,7 +57,7 @@ const SignUp = () => {
       >
         Sign up
       </button>
-      <div className="w-full justify-center flex py-4">
+      <div className="w-full justify-center flex pt-4">
         <p>Already have an account?</p>
         <button
           type="button"
