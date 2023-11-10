@@ -11,13 +11,13 @@ function App(): JSX.Element {
   if (!isAuth) return <Login />
 
   return (
-    <main className="flex ">
+    <main className="flex overflow-hidden">
       <Toaster richColors position="top-center" />
       <Sidebar />
       <div className="w-full relative h-screen justify-between flex flex-col">
         {toogleSpeakInsites ? <SpeakingInsites /> : ''}
         {toogleNewCall ? <Model /> : ''}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col justify-between overflow-y-auto gap-2">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -27,6 +27,7 @@ function App(): JSX.Element {
             <Route path="/profile" element={<Profile />} />
           </Routes>
         </div>
+
         {location.pathname === '/conversation' && <InputSpeaking />}
       </div>
     </main>

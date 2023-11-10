@@ -1,15 +1,18 @@
 import { useGoogleLogin } from '@react-oauth/google'
 import { LogoGoogle } from '@renderer/assets'
 import { useGlobalState } from '@renderer/context/ContextApi'
+import { useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 
 const Google = () => {
   const { setIsAuth } = useGlobalState()
+  const navigate = useNavigate()
   const login = useGoogleLogin({
     onSuccess: (codeResponse) => {
       console.log(codeResponse)
       toast.success('Success Login with google')
       setIsAuth(true)
+      navigate('/')
     },
     onError: () => toast.error('Something went wrong')
   })

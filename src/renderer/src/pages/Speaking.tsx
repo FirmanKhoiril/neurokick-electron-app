@@ -11,7 +11,7 @@ const Speaking = () => {
         <Transcript />
       ) : (
         <>
-          <div className="w-full bg-[#DCDCDC] py-2 px-4 rounded-[6px] mt-3 text-[12px] font-semibold">
+          <div className="w-full  bg-[#DCDCDC] py-2 px-4 rounded-[6px] mt-3 text-[12px] font-semibold">
             <p>Model GPT-3.5</p>
           </div>
           <LeadershipCopilot />

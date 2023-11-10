@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full bg-[#E5EDFF] flex justify-between items-center px-4 sm:px-6 py-3">
+    <nav className="w-full sticky top-0 bg-[#E5EDFF] flex justify-between items-center px-4 sm:px-6 py-3">
       <form onSubmit={handleSubmit} className="relative">
         <input
           type="text"

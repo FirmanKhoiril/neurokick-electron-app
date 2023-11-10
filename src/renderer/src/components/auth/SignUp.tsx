@@ -62,7 +62,10 @@ const SignUp = () => {
         <button
           type="button"
           className="pl-2 tracking-tight font-semibold text-blue-500"
-          onClick={() => setIsSignup(false)}
+          onClick={() => {
+            setIsSignup(false)
+            setShowPassword(false)
+          }}
         >
           Sign in
         </button>
